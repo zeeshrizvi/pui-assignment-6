@@ -1,0 +1,129 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>About Me -- Zeeshan Rizvi</title>
+        <meta name="description" content="An interactive getting started guide for Brackets.">
+        
+        <link rel="shortcut icon" href="../../favicon.ico" type="image/x-icon">
+        
+        <!-- Stylesheets -->
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="../css/style_about.css">
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.2.0/dist/leaflet.css"
+   integrity="sha512-M2wvCLH6DSRazYeZRIm1JnYyh22purTM+FDB5CsyxtQJYeKq83arPe5wgbNmcFXGqiSH2XR8dT/fJISVA1r/zQ=="
+   crossorigin=""/>
+        <link rel="stylesheet" href="../css/style_about.css">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        
+        <!-- Script -->
+        <script src="https://unpkg.com/leaflet@1.2.0/dist/leaflet.js"
+       integrity="sha512-lInM/apFSqyy1o6s89K4iQUKg6ppXEgsVxT35HbzUupEVRh2Eu9Wdl4tHj7dZO0s1uvplcYGmt3498TtHq+log=="
+       crossorigin=""></script>
+        
+    </head>
+    
+    <body>
+        <!-- Mobile NAV -->
+        <header id="mobile-nav">
+            <div>
+                <a href="../../index.html"><p>ZR</p></a>
+            </div>
+            
+            <div id="dropdown-container">
+                <div class="dropdown" style="float:right;">
+                  <img src="../images/menu.png" class="dropbtn">
+                  <div class="dropdown-content">
+                    <a href="../../index.html">projects</a>
+                    <a target="_blank" href="../pdfs/zeeshan-rizvi-resume.pdf">resume</a>
+                    <a href="../html/about.html" class="active-link">about me</a>
+                  </div>
+                </div>
+            </div>
+        </header>
+        
+        <!-- Nav -->
+        <header id="navigation-container">
+            <div>
+                <a href="../../index.html"><p>Zeeshan Rizvi</p></a>
+                <ul>
+                    <li><a href="../../index.html" >portfolio</a></li>
+                    <li><a target="_blank" href="../pdfs/zeeshan-rizvi-resume.pdf">resume</a></li>
+                    <li><a href="../html/about.html" class="active-link">about</a></li>
+                </ul>
+            </div>
+        </header>
+        
+        
+        <!-- About me content including my picture and/
+             a little blurb describing myself -->
+        
+        <!-- This image only shows up on the mobile view -->
+        <div id="mobile-image">
+                <img src="../images/about/headshot-mobile.jpg">
+        </div>
+        
+        <!-- Here is all the content for this page -->
+        <article id="about-me-container">
+            <div id="my-image">
+            
+            </div>
+            
+            
+            
+            <div id="about-me-text">
+                <div id="about-name">
+                    <em>Zeeshan</em> ("Zeesh") <em>Rizvi</em>
+                </div>
+                <div class="about-content">
+                    I am a senior business administration student at Carnegie Mellon University majoring in <em>Finance</em> and <em>Human-Computer Interaction</em>. My interest lie at the intersection of business and technology and I am interested in the integration of smart systems in the financial services' industry.
+                </div>
+                <div class="about-content">
+                    I grew up in Karachi, Pakistan and moved to the United States in 2014. My interests include travelling to new places and trying new cuisines. I've made it my goal to travel to all 7 wonders of the world by 2025! Besides that, I enjoy playing sports and watching LeBron dominate the NBA year after year.
+                </div>
+            </div>
+        </article>
+    
+        <!-- MAP of places I have visted-->
+        <section>
+            <div id="map-label">
+                My Travels
+            </div>
+            
+            <div id=map-container>
+                <div id="mapid">
+                </div>
+            </div>
+
+            <div id="map-caption">
+                <div id="visited">
+                    <img src="../images/marker-icon.png">
+                    <h3>Places I have visited</h3>
+                </div>
+                <div id="lived">
+                    <div id="red-circle"></div>
+                    <h3> Places where I have lived</h3>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Below is my footer -->
+        <footer>
+            <div id="footer_content">
+                <div id="copyright">
+                © Zeeshan Rizvi 2017. All rights reserved.
+                </div>
+
+                <div id="social"> 
+                    <a href="mailto:zeeshrizvi@gmail.com" target="_top" class="first"><img src="../images/email.png"></a>
+                    <a href="https://www.linkedin.com/in/zeeshanrizvi1/" target="_blank"><img src="../images/linkedin.png"></a>
+                </div>
+            </div>
+        </footer>
+        
+    <!-- Scripts -->
+        <script src="../javascript/about.js"></script>
+    </body>
+</html>

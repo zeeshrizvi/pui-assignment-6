@@ -1,0 +1,237 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>ChromeView -- Zeeshan Rizvi</title>
+        <meta name="description" content="An interactive getting started guide for Brackets.">
+        <link rel="stylesheet" href="../css/style_projects.css">
+        <link rel="shortcut icon" href="../../favicon.ico" type="image/x-icon">
+         <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> 
+    </head>
+    <body>
+        <!-- Mobile NAV -->
+        <header id="mobile-nav">
+            <div>
+                <a href="../../index.html"><p>ZR</p></a>
+            </div>
+            
+            <div id="dropdown-container">
+                <div class="dropdown" style="float:right;">
+                  <img src="../images/menu.png" class="dropbtn">
+                  <div class="dropdown-content">
+                    <a class="active-link" href="../../index.html">projects</a>
+                    <a target="_blank" href="../pdfs/zeeshan-rizvi-resume.pdf">resume</a>
+                    <a href="../html/about.html">about me</a>
+                  </div>
+                </div>
+            </div>
+        </header>
+        
+        <!-- Nav -->
+        <header id="navigation-container">
+            <div>
+                <a href="../../index.html"><p>Zeeshan Rizvi</p></a>
+                <ul>
+                    <li><a href="../../index.html" class="active-link">portfolio</a></li>
+                    <li><a target="_blank" href="../pdfs/zeeshan-rizvi-resume.pdf">resume</a></li>
+                    <li><a href="../html/about.html">about</a></li>
+                </ul>
+            </div>
+        </header>
+        <article>
+            <!-- Slideshow -->
+            <div class="slideshow-container">
+              <div class="mySlides fade">
+                <div class="numbertext">1 / 3</div>
+                <img src="../images/chromeview/logo.jpg" style="width:100%">
+                <div class="text">The team that worked on Chromeview over the course of 4 weeks</div>
+              </div>
+
+              <div class="mySlides fade">
+                <div class="numbertext">2 / 3</div>
+                <img src="../images/chromeview/mockup.jpeg" style="width:100%">
+                <div class="text">Mid-fidelity prototypes of the final screen</div>
+              </div>
+
+              <div class="mySlides fade">
+                <div class="numbertext">3 / 3</div>
+                <img src="../images/chromeview/app.png" style="width:100%">
+                <div class="text">Working implementation of the application</div>
+              </div>
+
+              <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+              <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <br>
+
+            <div style="text-align:center">
+              <span class="dot" onclick="currentSlide(1)"></span> 
+              <span class="dot" onclick="currentSlide(2)"></span> 
+              <span class="dot" onclick="currentSlide(3)"></span> 
+            </div>
+            
+            <!-- Content -->
+            
+            <!-- I have used the following skeleton to produce all my project image pages/
+
+            For content that involves text: /
+                <div>
+                    <aside>
+                        <h2></h2>
+                        <p></p>
+                    </aside>
+                </div>
+
+            For any content that involves images:/ 
+                <div class="images-container">
+                    <img id="aside_img" src="#">
+                </div>
+            -->
+            <section>
+                <div id="Heading"> 
+                    <h1>ChromeView</h1>
+                    <h3>A Google Chrome extension designed to combat the problem of selective expose on Facebook</h3>
+                </div>
+                <div id="Text"> 
+
+                    <p>This past election cycle was the first time my team (comprised of Ryan Sickles, Min Kim and Benjamin Jang) and I were actively able to engage in politics and we
+                    were all very disheartened by the partisanship we witnessed across the country. We witnessed a
+                    deep rift emerge between Americans in real-time, and our team was   interested to see how
+                    technology played a role in this divide. After we researched the topic, we learned how social media
+                    (with facebook in particular) for the sake of catering to their users, creates an ideological bubble that
+                    traps the user by feeding them only one point of view. If one is conservative, they will consistently be
+                    shown conservative articles and if one is liberal they will only be shown liberal articles. We
+                    hypothesised that this involuntary lack of exposure to the other side’s view has been the dominant
+                    contributor to the polarization of our society over the past few years. Our goal was to help bridge the
+                    gap between viewpoints created by facebook by providing an application that let users see two sides
+                    to the same story -- the result was ChromeView</p>
+                    <p> To read the whitepaper <a href="../pdfs/chromeview.pdf" target="_blank" class="bold">Click here</a></p>
+                    <p>ChromeView was also featured in CMU's HCII magazine. <a href="https://www.hcii.cmu.edu/news/2017/chromeview-plugin-designed-fight-selective-exposure" target="_blank" class="bold">Click here</a> to read more.</p>
+                </div>
+                <div id="sub-content">
+                    <div id="hypothesis">
+                        <aside id="hypothesis_aside">
+                            <h2>Hypothesis and Initial Mockups</h2>
+                            <p>
+                                Inspired by Diakopoulos and Kolisa’s ideas, we are hypothesizing that we could start tackling the problem of passive news consumption practices by letting users observe their own behavior on social media and empowering them with tools with which they might interact with news and algorithms in different ways, it would help them become more mindful of their news consumption practices.
+                                This informed our two main hypotheses:
+                            </p>
+                            <br>
+                            <p class="list">
+                                1. We can leverage design to enable everyone to question their versions of reality
+                            </p>
+                            <br>
+                            <p class="list">
+                                2. If the users are reminded of the fact that they contribute to their own filter bubbles, it will motivate users to be more equally informed of ideologies from both sides of the spectrum.
+                            </p>
+                            <br>
+                            <p>
+                                Based off these hypothesis, we wireframed our application with two primary features. Fig. 1 is our proposed solution to the first hypothesis. It is a prototype of a hover-tool that automatically pops up when a user scrolls on a Facebook news article and provides them with other similar articles from other news sources. This gives users the opportunity to easily explore different views and opinions if they choose to do so. Fig. 2 is a mockup of a “political leaning meter” that solves our second hypothesis. We believe that by showing users a visual representation of their political leanings, we can help them come to the realization that they do not have the “whole picture”, and this cognitive dissonance will motivate them to seek out other points of views.
+                            </p>
+                            
+                        </aside>
+                        
+                        <div class="images-container">
+                            <img id="aside_img" src="../images/chromeview/fig1.png">
+                            <figcaption>Figure. 1</figcaption>
+                            <img id="aside_img2"  src="../images/chromeview/fig2.png">
+                            <figcaption>Figure. 2</figcaption>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <aside>
+                            <h2>Research and User Testing</h2>
+                            <p>To test our mockups, we conducted a lightweight rapid
+                            prototype testing, and we sent out two surverys to gauge interest. This research allowed us to fine tune our concept until we were able to ideate the best feature that users would gain value from.</p>
+                        </aside>
+                        
+                        <div class="images-container">
+                            <img id="aside_img" src="../images/chromeview/survey.png">
+                        </div>
+
+                    </div>
+                    
+                    <div>
+                        <aside>
+                            <h2>Technical Implementation</h2>
+                            <p>In order to achieve the desired functionality, our team
+decided to develop a lightweight, scalable, and easy to use
+chrome extension, called ChromeView, that would operate
+in the Facebook newsfeed environment. In order to
+properly develop this application, the process used was
+Agile in nature - through which the application features
+were developed, tested, reviewed then iterated on by the
+team. The main technology stack for our project was
+HTML5, CSS, and JQUERY 3.2. Our project also included
+the integration of two API’s: the Lateral.io news
+recommender API,
+and the Google Chrome Browser API.</p>
+                        </aside>
+                        
+                        <div class="images-container">
+                            <img id="aside_img" src="../images/chromeview/code.png">
+                        </div>
+                    </div>
+                    <div>
+                        <aside>
+                            <h2>Finished Application</h2>
+                            <p>
+                                The video on the right was recorded by my teammate, Ryan Sickles, and it shows the working implementation of ChromeView from his Facebook profile.
+                            </p>
+                        </aside>
+                        
+                        <div class="images-container">
+                            <iframe height="200px" src="https://www.youtube.com/embed/Ye5g5-Oi6PI" frameborder="0" allowfullscreen>ChromeView Video</iframe>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </article>
+        
+         <!-- Below is my footer -->
+        <footer>
+            <div id="footer_content">
+                <div id="copyright">
+                © Zeeshan Rizvi 2017. All rights reserved.
+                </div>
+
+                <div id="social"> 
+                    <a href="mailto:zeeshrizvi@gmail.com" target="_top" class="first"><img src="../images/email.png"></a>
+                    <a href="https://www.linkedin.com/in/zeeshanrizvi1/" target="_blank"><img src="../images/linkedin.png"></a>
+                </div>
+            </div>
+        </footer>
+    </body>
+    
+    <!-- script for my slide show -->
+    <script type="text/javascript">
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {slideIndex = 1} 
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none"; 
+      }
+      for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block"; 
+      dots[slideIndex-1].className += " active";
+    }
+    </script>
+</html>

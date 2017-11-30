@@ -1,0 +1,422 @@
+@import 'reset.css';
+@import url('https://fonts.googleapis.com/css?family=Raleway:200,500,800');
+
+body { 
+    background: #fff;
+    font-family: "Raleway", sans-serif;
+}
+
+header#mobile-nav {
+    display: none;
+    position: fixed;
+    width: 100%;
+    margin-top: 0;
+    top: 0;
+    z-index: 10000;
+}
+
+header div {
+    background: #fff;
+    box-sizing: border-box;
+    width: 80%;
+    height: 100px;
+    float: left;
+    margin-left: 10%;
+    margin-top: 20px;
+    border-top: solid 4px #000;
+    border-bottom: double 8px #000;
+    font-size: 44px;
+    line-height: 68px;
+}
+
+header div p {
+    margin-top: 10px;
+    width: 40%;
+    float: left;
+    font-size: 44px;
+}
+
+header ul {
+    display: inline-block;
+    width: 60%;
+    float: right;
+    box-sizing: border-box;
+    text-align: right;
+}
+
+header ul li {
+    display: inline-block;
+    font-size: 16px;
+    margin-right: 20px;
+    color: #aaa;
+}
+
+header ul li a {
+    text-decoration: none;
+}
+
+header ul li a:hover{
+    color: #000;
+    transition: .7s ease;
+}
+
+header ul li a.active-link{
+    color: #000;
+    text-decoration: none;
+}
+
+header ul li:last-child {
+    margin-right: 0px;
+}
+
+/*******************/
+/* Drop down for mobile view */
+/*******************/
+
+.dropbtn {
+    width: 40px;
+    height: 10px;
+    margin-top: 0px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+#dropdown-container {
+    width: 50%;
+    float: right;
+    border-top: solid 4px #000;
+    border-bottom: double 8px #000;
+}
+
+.dropdown {
+    width: 20%;
+    float: right;
+    position: relative;
+    display: inline-block;
+    height: 88px;
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+.dropdown-content {
+    display: none;
+    width: 1000%;
+    position: absolute;
+    margin-top: 20px;
+    right: 0;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: #aaa;
+    font-size: 20px;
+    font-family: "Raleway";
+    border: none;
+    background: #fff;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    border-bottom: 1px solid #555;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+    color: #000;
+    transition: .7s ease;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content a.active-link {
+    color: #000;
+}
+
+/***********************/
+/*****   About Me  *****/
+/***********************/
+#my-image {
+    width: 250px;
+    height: 520px;
+    float: left;
+    margin-left: calc(50% - 250px);
+    background: url(../images/about/headshot.jpg);
+    -webkit-box-shadow: 0px 0px 35px -2px rgba(85,85,85,1);
+    -moz-box-shadow: 0px 0px 35px -2px rgba(85,85,85,1);
+    box-shadow: 0px 0px 35px -2px rgba(85,85,85,1); 
+}
+
+#mobile-image {
+    width: 100%;
+    display: none;
+    margin: 0 auto;
+}
+
+#mobile-image img {
+    width: 100%;
+}
+
+em {
+    font-weight: 800;
+}
+
+article#about-me-container{
+    height: 520px;
+    width: 80%;
+    float: left;
+    clear: both;
+    margin-left: 10%;
+    margin-top: 50px;
+}
+
+#about-me-text {
+    width: 400px;
+    height: 400px;
+    margin-left: calc(50%);
+    margin-top: 60px;
+    height: auto;
+    background: #fff;
+    text-align: left;
+    padding: 20px;
+}
+
+#about-name {
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.about-content {
+    margin-bottom: 10px;
+}
+/***********************/
+/********* MAP *********/
+/***********************/
+section {
+    height: 800px;
+    margin: 0 auto;
+    width: 80%;
+    float: left;
+    clear: both;
+    margin-top: 50px;
+    margin-left: 10%;
+}
+
+#map-label {
+    width: 100%;
+    height: 50px;
+    position: relative;
+    font-size: 24px;
+    line-height: 50px;
+    padding-top: 10px;
+    margin-bottom: 10px;
+}
+
+#map-caption {
+    max-width: 1024px;
+    margin: 0 auto;
+    height: 50px;
+    position: relative;
+    font-size: 24px;
+    line-height: 30px;
+    background: #444;
+    border-radius: 0 0 10px 10px;
+    color: #fff;
+}
+
+#visited {
+    width: 20%;
+    float: left;
+}
+
+#visited img{
+    width: 15px;
+    height: auto;
+    float: left;
+    margin: 10px;
+}
+
+#lived {
+    width: 20%;
+    float: left;
+}
+
+div#red-circle {
+    width: 15px;
+    height: 15px;
+    border: 2px solid #f03;
+    border-radius: 50%;
+    margin: 17px 5px 0 0;
+    float: left;
+    background: rgba(255, 0, 35, .3);
+}
+
+#map-caption h3 {
+    line-height: 50px;
+    font-size: 14px;
+    float: left;
+    margin: 0;
+    margin-top: 0;
+}
+
+#map-container {
+    padding: 0;
+}
+
+#mapid { 
+    position: relative;
+    max-width: 1024px;
+    width: 100%;
+    height: 600px; 
+    margin: 0 auto;
+    margin-top: 0;
+}
+
+/***************************/
+/***********FOOTER**********/
+/***************************/
+footer {
+    width: 100%;
+    background: #fff;
+    height: 40px;
+    position: fixed;
+    bottom: 0;
+    clear: both;
+    box-sizing: border-box;
+    z-index: 1000;
+}
+
+footer #footer_content {
+    margin: 0 auto;
+    max-width: 80%;
+    color: #555;
+    font-style: italic;
+    padding-left: 0px;
+    vertical-align: center;
+}
+
+footer #footer_content #copyright{
+    width: 70%;
+    height: 32px;
+    font-style: italic;
+    float: left;
+    padding-top: 15px;
+    font-size: 12px;
+}
+
+footer #footer_content #social {
+    width: 25%;
+    height: 40px;
+    float: right;
+    text-align: right;
+}
+
+footer #footer_content #social a {
+    opacity: 0.6;
+}
+
+footer #footer_content #social a:hover {
+    opacity: 1;
+    border-bottom: 1px #000 solid;
+}
+
+footer #footer_content #social a.first {
+    margin-right: 9px;
+}
+
+footer #footer_content #social a img {
+    max-height: 30px;
+    padding-top: 15px;
+}
+
+/*******************************/
+/* Media Query for Logo */
+/*******************************/
+@media screen and (max-width: 1000px) {
+    #navigation-container div p {
+        font-size: 32px;
+    }
+}
+
+/*******************************/
+/* Media Query for Mobile View */
+/*******************************/
+@media screen and (max-width: 768px) {
+    header#mobile-nav {
+        display: block;
+    }
+    header div {
+        width: 50%;
+        float: left;
+        margin-left: 0;
+        margin-top: 0;
+    }
+    
+    header div p {
+        font-size: 36px;
+        padding-left: 5px;
+    }
+    
+    header#navigation-container  {
+        display: none;
+    }
+    
+    article#about-me-container {
+        width: 100%;
+        height: auto;
+        margin-left: 0;
+    }
+    
+    div#my-image {
+        display: none;
+    }
+    
+    #about-me-text {
+        width: 80%;
+        margin: 0;
+        margin-left: 10%;
+    }
+    
+    #mobile-image {
+        width: 80%;
+        margin-left: 10%;
+        display: block;
+        margin-top: 120px;
+    }
+    
+    section {
+        width: 80%;
+        margin-left: 10%;
+    }
+    
+    #map-container {
+        background: #f00;   
+    }
+    
+    #map-caption {
+        width: 100%;
+        
+    }
+    
+    #map-caption #visited {
+        width: 40%;
+    }
+    
+    #map-caption #lived {
+         width: 40%;
+    }
+    
+    #map-caption h3 {
+        font-size: 12px;
+    }
+    
+}
+
+

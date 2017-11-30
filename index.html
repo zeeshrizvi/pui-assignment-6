@@ -1,0 +1,172 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Home -- Zeeshan Rizvi</title>
+        <meta name="description" content="An interactive getting started guide for Brackets.">
+        <link rel="stylesheet" href="resources/css/style_portfolio.css">
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <style>
+        .mySlides {display:none}
+        .w3-left, .w3-right, .w3-badge {cursor:pointer}
+        .w3-badge {height:13px;width:13px;padding:0}
+        </style>
+        <script src="resources/javascript/nav.js"></script>
+    </head>
+
+    <body>
+        <!-- Mobile NAV -->
+        <header id="mobile-nav">
+            <div>
+                <a href="index.html"><p>ZR</p></a>
+            </div>
+            
+            <div id="dropdown-container">
+                <div class="dropdown" style="float:right;">
+                  <img src="resources/images/menu.png" class="dropbtn">
+                  <div class="dropdown-content">
+                    <a class="active" href="index.html">projects</a>
+                    <a target="_blank" href="resources/pdfs/zeeshan-rizvi-resume.pdf">resume</a>
+                    <a href="resources/html/about.html">about me</a>
+                  </div>
+                </div>
+            </div>
+        </header>
+        
+        <!-- Nav -->
+        <header id="navigation-container">
+            <div>
+                <a href="index.html"><p>Zeeshan Rizvi</p></a>
+                <ul>
+                    <li><a href="index.html" class="active">portfolio</a></li>
+                    <li><a target="_blank" href="resources/pdfs/zeeshan-rizvi-resume.pdf">resume</a></li>
+                    <li><a href="resources/html/about.html">about</a></li>
+                </ul>
+            </div>
+        </header>
+        
+        
+        
+        <article>
+            <div id="portfolio_container">
+                <!-- Class "one" has been designed with the/
+                    left div being bigger than the right div/
+                    and class "two" has been designed with the right div being bigger than the left div -->
+                
+                <div class="one">
+                    <!-- Left div -->
+                    <div class="one_left">
+                        <img src="resources/images/chromeview/logo.jpg">
+                        <div id="one_left_overlay">
+                            <div id="one_left_text"> 
+                                <a href="resources/html/chromeview.html">ChromeView</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Right div -->
+                    <div class="one_right">
+                        <img src="resources/images/crimecasino/code.jpg">
+                        <div id="one_right_overlay">
+                            <div id="one_right_text"> 
+                                <a href="resources/html/casino.html">Crime Casino</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="two">
+                    <!-- Left div -->
+                    <div class="two_left">
+                        <img src="resources/images/uplift/logo.jpg">
+                        <div id="two_left_overlay" onclick="myFunction()">
+                            <div id="two_left_text"> 
+                                <a href="resources/html/uplift.html">
+                                Uplift
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Right div -->
+                    <div class="two_right">
+                        <img src="resources/images/unfilled/bunbun.png">
+                        <div id="two_right_overlay" onclick="myFunction()">
+                            <div id="two_right_text"> 
+                                Bun Bun Bake Shop
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="one">
+                    <!-- Left div -->
+                    <div class="one_left">
+                        <img src="resources/images/unfilled/data.jpeg">
+                        <div id="one_left_overlay" onclick="myFunction()">
+                            <div id="one_left_text"> 
+                                Data Driven Environmental Display
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Right div -->
+                    <div class="one_right">
+                        <img src="resources/images/unfilled/dhcs.jpeg">
+                        <div id="one_right_overlay" onclick="myFunction()">
+                            <div id="one_right_text"> 
+                               Designing apps for smart watches
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                 <div class="two">
+                   <!-- Left div -->
+                   <div class="two_left">
+                        <img src="resources/images/unfilled/uxchange.png">
+                        <div id="two_left_overlay" onclick="myFunction()">
+                            <div id="two_left_text"> 
+                                uXchange 
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Right div -->
+                    <div class="two_right">
+                        <img src="resources/images/unfilled/splash-a-thon.jpg">
+                        <div id="two_right_overlay" onclick="myFunction()">
+                            <div id="two_right_text"> 
+                                Splash-A-Thon
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+        
+        <!-- Below is my footer -->
+        <footer>
+            <div id="footer_content">
+                <div id="copyright">
+                © Zeeshan Rizvi 2017. All rights reserved.
+                </div>
+
+                <div id="social"> 
+                    <a href="mailto:zeeshrizvi@gmail.com" target="_top" class="first"><img src="resources/images/email.png"></a>
+                    <a href="https://www.linkedin.com/in/zeeshanrizvi1/" target="_blank"><img src="resources/images/linkedin.png"></a>
+                </div>
+            </div>
+        </footer>
+        
+        <!-- Didn't have enough time to make enough content/
+            whoops sorry!/
+            instead i'll show error messages if the user tries/
+            to click into a page i haven't made content for -->
+        <script>
+        function myFunction() {
+            alert("Whoops, this page has no content yet. Look out for more of my projects soon!");
+        }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,206 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Crime Casino -- Zeeshan Rizvi</title>
+        <meta name="description" content="An interactive getting started guide for Brackets.">
+        <link rel="stylesheet" href="../css/style_projects.css">
+        <link rel="shortcut icon" href="../../favicon.ico" type="image/x-icon">
+         <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> 
+    </head>
+    <body>
+        <!-- Mobile NAV -->
+        <header id="mobile-nav">
+            <div>
+                <a href="../../index.html"><p>ZR</p></a>
+            </div>
+            
+            <div id="dropdown-container">
+                <div class="dropdown" style="float:right;">
+                  <img src="../images/menu.png" class="dropbtn">
+                  <div class="dropdown-content">
+                    <a class="active-link" href="../../index.html">projects</a>
+                    <a target="_blank" href="../pdfs/zeeshan-rizvi-resume.pdf">resume</a>
+                    <a href="../html/about.html">about me</a>
+                  </div>
+                </div>
+            </div>
+        </header>
+        
+        <!-- Nav -->
+        <header id="navigation-container">
+            <div>
+                <a href="../../index.html"><p>Zeeshan Rizvi</p></a>
+                <ul>
+                    <li><a href="../../index.html" class="active-link">portfolio</a></li>
+                    <li><a target="_blank" href="../pdfs/zeeshan-rizvi-resume.pdf">resume</a></li>
+                    <li><a href="../html/about.html">about</a></li>
+                </ul>
+            </div>
+        </header>
+        
+        <article>
+            <!-- Slideshow -->
+            <div class="slideshow-container">
+              <div class="mySlides fade">
+                <div class="numbertext">1 / 3</div>
+                <img src="../images/crimecasino/code.jpg" style="width:100%">
+                <div class="text">Python code for the game</div>
+              </div>
+
+              <div class="mySlides fade">
+                <div class="numbertext">2 / 3</div>
+                <img src="../images/crimecasino/home.jpg" style="width:100%">
+                <div class="text">Home screen after running code</div>
+              </div>
+
+              <div class="mySlides fade">
+                <div class="numbertext">3 / 3</div>
+                <img src="../images/crimecasino/play1.jpg" style="width:100%">
+                <div class="text">Screen after one round of the game</div>
+              </div>
+
+              <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+              <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <br>
+
+            <div style="text-align:center">
+              <span class="dot" onclick="currentSlide(1)"></span> 
+              <span class="dot" onclick="currentSlide(2)"></span> 
+              <span class="dot" onclick="currentSlide(3)"></span> 
+            </div>
+            
+            <!-- Content -->
+            
+            <!-- I have used the following skeleton to produce all my project image pages/
+
+            For content that involves text: /
+                <div>
+                    <aside>
+                        <h2></h2>
+                        <p></p>
+                    </aside>
+                </div>
+
+            For any content that involves images:/ 
+                <div class="images-container">
+                    <img id="aside_img" src="#">
+                </div>
+            -->
+            <section>
+                <div id="Heading"> 
+                    <h1>Crime Casino</h1>
+                    <h3>A game coded in Python</h3>
+                </div>
+                <div id="Text"> 
+
+                    <p>As part of the course 15-112 (Fundementals of Programming) at Carnegie Mellon University, I made a Python game called "Crime Casino". This was created over a 5 day period and it recieved the maximum possible score of 100, from Prof. Victor Adamchik.</p>
+                    <p>In this project, I created a blackjack game in which the player attempts to beat the dealer by reaching as close as possible to the score of 21 without going over.</p>
+                </div>
+                <div id="sub-content">
+                    <div>
+                        <aside>
+                            <h2>Gameplay Tutorial</h2>
+                            <p>Lorem ipsum dolor sit amet, adipiscing volutpat, elit id ante dui eget risus feugiat. Vitae dolor sit bibendum in vitae, dolor tristique nonummy aenean, quis pede nullam. Vel sit risus amet nonummy, quis faucibus hac, sem neque urna eget nec quisque, vitae cras.</p>
+                        </aside>
+                    
+                        <div class="images-container">
+                            <iframe height="200px"  src="https://www.youtube.com/embed/38sHwf5kElw" frameborder="0" allowfullscreen>Crime Casino Video</iframe>
+                        </div>
+                    </div>
+                    <div>
+                        <aside>
+                            <h2>Home Screen</h2>
+                            <p>Displays two options. You can either press I to go to the instructions screen or you can press R to be directed to the playing room.</p>
+                        </aside>
+                        <div class="images-container">
+                            <img id="aside_img" src="../images/crimecasino/home.jpg">
+                        </div>
+                    </div>
+                    <div>
+                        <aside>
+                            <h2>Instructions Screen</h2>
+                            <p>Displays instructions of playing blackjack and the story behind the game
+	This screen will only allow you to progress to the playing room by clicking R</p>
+                        </aside>
+                        <div class="images-container">
+                            <img id="aside_img" src="../images/crimecasino/instructions.jpg">
+                        </div>
+                    </div>
+                    <div>
+                        <aside>
+                            <h2>Game Screen</h2>
+                            <p>
+	<span class="bold">BET:</span> To begin the game you must place a bet value from the sidebar. Denominations
+	for bets are $25,000 $50,000 $100,000 and BOUNTY which means whatever you have
+	left in your bank. When you add an amount to your bet, it will update the current bet 
+	display.<br>
+
+	<span class="bold">DEAL:</span> Once you are satisfied by the bet amount, click deal to be dealt your cards. 
+	You will notice that the bet screen disappears so no further bets can be made.<br>
+	
+	<span class="bold">HIT:</span> If you are not satisfied with your score and believe you can get closer to 
+	21 without going over, press HIT to add a card to your hand. This will update your 
+	score .<br>
+
+	<span class="bold">STAY:</span> Once you are satisfied with your hand, press STAY to let the Dealer, Tony and 
+	Vito play their hands. <br>
+	
+	<span class="bold">NEW ROUND:</span> Once the round has been played and the winners/losers decided, press
+	new round to play the next hand.<br>
+                        </aside>
+                        <div class="images-container">
+                            <img id="aside_img" src="../images/crimecasino/play1.jpg">
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </article>
+        
+         <!-- Below is my footer -->
+        <footer>
+            <div id="footer_content">
+                <div id="copyright">
+                © Zeeshan Rizvi 2017. All rights reserved.
+                </div>
+
+                <div id="social"> 
+                    <a href="mailto:zeeshrizvi@gmail.com" target="_top" class="first"><img src="../images/email.png"></a>
+                    <a href="https://www.linkedin.com/in/zeeshanrizvi1/" target="_blank"><img src="../images/linkedin.png"></a>
+                </div>
+            </div>
+        </footer>
+    </body>
+    
+    <!-- script for my slide show -->
+    <script type="text/javascript">
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {slideIndex = 1} 
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none"; 
+      }
+      for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block"; 
+      dots[slideIndex-1].className += " active";
+    }
+    </script>
+</html>
